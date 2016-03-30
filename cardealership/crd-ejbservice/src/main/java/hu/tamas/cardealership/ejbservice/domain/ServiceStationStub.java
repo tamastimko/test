@@ -2,7 +2,7 @@ package hu.tamas.cardealership.ejbservice.domain;
 
 public class ServiceStationStub {
 	private String name;
-	private String city; //cimet itt is szedtem, db-ben modositani
+	private String city; //cimet itt is szetszedtem, db-ben modositani
 	private String street;
 	private String streetNumber;
 	private long taxnumber;

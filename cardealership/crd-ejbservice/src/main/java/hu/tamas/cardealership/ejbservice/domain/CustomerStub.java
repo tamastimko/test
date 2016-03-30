@@ -10,7 +10,7 @@ public class CustomerStub {
 	private String street;
 	private int streetNumber;
 	private String mothersName;
-	private String gender; //lehetne bool is, 0 ha no, 1 ha ferfi
+	private CustomerGenderStub gender; //lehetne bool is, 0 ha no, 1 ha ferfi
 	
 	public CustomerStub(){
 		this(null,0l,null,null,null,null,0,null,null);
@@ -18,7 +18,7 @@ public class CustomerStub {
 	
 
 	public CustomerStub(String name, long identityCardNumber, String country, String zipcode, String city,
-			String street, int streetNumber, String mothersName, String gender) {
+			String street, int streetNumber, String mothersName, CustomerGenderStub gender) {
 		super();
 		this.name = name;
 		this.identityCardNumber = identityCardNumber;
@@ -57,11 +57,11 @@ public class CustomerStub {
 		this.mothersName = mothersName;
 	}
 
-	public String getGender() {
+	public CustomerGenderStub getGender() {
 		return gender;
 	}
 
-	public void setGender(String gender) {
+	public void setGender(CustomerGenderStub gender) {
 		this.gender = gender;
 	}
 

@@ -3,7 +3,7 @@ package hu.tamas.cardealership.ejbservice.domain;
 public class CustomerCriteria {
 	private String country;
 	private String city;
-	private String gender;
+	private CustomerGenderStub gender;
 	
 	public CustomerCriteria() {
 	}
@@ -24,11 +24,11 @@ public class CustomerCriteria {
 		this.city = city;
 	}
 
-	public String getGender() {
+	public CustomerGenderStub getGender() {
 		return gender;
 	}
 
-	public void setGender(String gender) {
+	public void setGender(CustomerGenderStub gender) {
 		this.gender = gender;
 	}
 
