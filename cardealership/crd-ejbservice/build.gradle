@@ -1,5 +1,0 @@
-jar { archiveName 'crd-ejbservice.jar' }
-
-dependencies {
-	compile project(':crd-persistence')
-}

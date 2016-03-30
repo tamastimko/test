@@ -1,3 +1,0 @@
-include 'crd-ejbservice'
-include 'crd-persistence'
-include 'crd-weblayer'
