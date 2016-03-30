@@ -1,0 +1,9 @@
+apply plugin: 'war'
+
+war { archiveName 'crd-weblayer.war' }
+
+dependencies {
+	providedCompile project(':crd-ejbservice')
+	providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: servletapiVersion
+	providedCompile group: 'jstl', name: 'jstl', version: jstlVersion	
+}
